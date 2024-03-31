@@ -54,13 +54,13 @@ const Jokes = () => {
 
   return (
     <div className='font-sans flex flex-col justify-center items-center gap-3 ps-56 pe-44 py-2.5 mt-10'>
-      <p className='text-xl text-slate-600/90 text-wrap py-2.5'>{joke}</p>
+      <p className='text-xl text-[#808080] text-wrap py-2.5'>{joke}</p>
       {jokeIndex < jokes.length - 1 && (
         <>
           <hr className='w-3/4 m-10' />
           <div className='flex justify-center items-center w-full gap-7 mb-8'>
             <button
-              className='text-lg bg-blue-600/90 hover:bg-blue-700/90 w-[250px] py-2.5 border-b-[2.5px] border-blue-700/80 text-white'
+              className='text-lg bg-[#2c7edb] hover:bg-blue-700/90 w-[250px] py-2.5 border-b-[2.5px] border-[#0361be] text-white'
               onClick={() => {
                 funnyJoke(jokeIndex);
                 nextJoke();
@@ -68,7 +68,7 @@ const Jokes = () => {
               This is Funny!
             </button>
             <button
-              className='text-lg bg-green-600/90 hover:bg-green-700/90 w-[250px] py-2.5 border-b-[2.5px] border-green-700/80 text-white'
+              className='text-lg bg-[#29b363] hover:bg-green-700/90 w-[250px] py-2.5 border-b-[2.5px] border-[#039442] text-white'
               onClick={() => {
                 notFunnyJoke(jokeIndex);
                 nextJoke();
