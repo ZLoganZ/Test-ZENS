@@ -61,19 +61,19 @@ const Jokes = () => {
   );
 
   return (
-    <div className='font-sans flex flex-col justify-center items-center gap-3 ps-56 pe-44 py-2.5 mt-10'>
-      <p className='text-xl text-[#808080] text-wrap py-2.5'>{joke}</p>
+    <div className='font-sans flex flex-col justify-center items-center gap-3 lg:ps-56 lg:pe-44 px-5 py-2.5 mt-10'>
+      <p className='lg:text-xl text-sm text-[#646464] text-wrap py-2.5'>{joke}</p>
       {jokeIndex < jokes.length - 1 && (
         <>
-          <hr className='w-3/4 m-10' />
+          <hr className='w-3/4 lg:m-10 m-5' />
           <div className='flex justify-center items-center w-full gap-7 mb-8'>
             <button
-              className='text-lg bg-[#2c7edb] hover:bg-blue-700/90 w-[250px] py-2.5 border-b-[2.5px] border-[#0361be] text-white'
+              className='lg:text-lg bg-[#2c7edb] hover:bg-blue-700/90 w-[250px] lg:py-2.5 py-1 border-b-[2.5px] border-[#0361be] text-white'
               onClick={() => rateJoke(RATE.FUNNY)}>
               This is Funny!
             </button>
             <button
-              className='text-lg bg-[#29b363] hover:bg-green-700/90 w-[250px] py-2.5 border-b-[2.5px] border-[#039442] text-white'
+              className='lg:text-lg bg-[#29b363] hover:bg-green-700/90 w-[250px] lg:py-2.5 py-1 border-b-[2.5px] border-[#039442] text-white'
               onClick={() => rateJoke(RATE.NOT_FUNNY)}>
               This is not funny.
             </button>
